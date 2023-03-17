@@ -148,18 +148,31 @@ form input {
   font-weight: 700;
 }
 
-/* .list-items {
-  width: 120%;
-  display: flex;
-  justify-content: space-between;
-  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
-    rgba(0, 0, 0, 0.22) 0px 10px 10px;
-} */
-
 i {
   font-weight: 400;
   text-shadow: 0 1px 0 #454444, 0 2px 0 var(--dark-blue),
     0 3px 0 var(--dark-blue), 0 4px 0 var(--dark-blue),
     0 0 5px rgba(230, 139, 139, 0.05);
   font-size: 18px;
+}
+
+.margin-left {
+  margin-left: 20px;
+}
+
+.flower-1,
+.flower-2 {
+  width: 10%;
+  position: absolute;
+  filter: drop-shadow(2px 3px 3px var(--white));
+}
+
+.flower-1 {
+  top: 9%;
+  left: 25%;
+}
+
+.flower-2 {
+  top: 9%;
+  right: 25%;
 }
