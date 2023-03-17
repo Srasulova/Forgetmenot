@@ -1,1 +1,165 @@
+:root {
+  --dark-blue: #527af2;
+  --medium-blue: #6695f2;
+  --light-blue: #bdd2ed;
+  --yellow: #fbdf56;
+  --white: #f2f2f2;
+}
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--medium-blue);
+}
+
+header {
+  text-align: center;
+  color: var(--yellow);
+  font-family: "Mynerve", cursive;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 0.1em;
+  margin-bottom: -10px;
+  padding: 0;
+}
+
+header p {
+  margin-top: 0;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+h2 {
+  text-align: center;
+  color: var(--white);
+  font-family: "Manjari", sans-serif;
+  font-size: 30px;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  margin-bottom: 1px;
+}
+
+.tasks-form {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 40%;
+  height: 130px;
+  justify-content: space-evenly;
+  /* align-items: center; */
+}
+
+.btn-add {
+  width: 40%;
+  margin: 10px auto;
+  border: none;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(
+    100% 100% at 100% 0,
+    var(--white) 0,
+    var(--yellow) 100%
+  );
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, rgba(58, 65, 111, 0.5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: var(--dark-blue);
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "Manjari", sans-serif;
+  height: 35px;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow 0.15s, transform 0.15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow, transform;
+  font-size: 16px;
+}
+
+.btn-add:focus {
+  box-shadow: var(--yellow) 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--yellow) 0 -3px 0 inset;
+}
+
+.btn-add:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px,
+    rgba(45, 35, 66, 0.3) 0 7px 13px -3px, var(--yellow) 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.btn-add:active {
+  box-shadow: var(--yellow) 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+.due-date {
+  width: 50%;
+  margin: 0 auto;
+  color: var(--dark-blue);
+  font-family: "Manjari", sans-serif;
+  padding-left: 1em;
+}
+
+.due-date-label {
+  text-align: center;
+  color: var(--white);
+  font-family: "Manjari", sans-serif;
+  font-weight: 400;
+  margin: 10px auto 5px auto;
+}
+
+form input {
+  border-radius: 5px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  height: 30px;
+}
+
+.daily-task::placeholder {
+  color: var(--dark-blue);
+  padding-left: 1em;
+  font-family: "Manjari", sans-serif;
+}
+
+.tasks-list-container {
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  font-family: "Gaegu", cursive;
+  font-size: 26px;
+  font-weight: 700;
+}
+
+/* .list-items {
+  width: 120%;
+  display: flex;
+  justify-content: space-between;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+} */
+
+i {
+  font-weight: 400;
+  text-shadow: 0 1px 0 #454444, 0 2px 0 var(--dark-blue),
+    0 3px 0 var(--dark-blue), 0 4px 0 var(--dark-blue),
+    0 0 5px rgba(230, 139, 139, 0.05);
+  font-size: 18px;
+}
